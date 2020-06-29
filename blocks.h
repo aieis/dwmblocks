@@ -5,17 +5,17 @@ static const Block blocks[] = {
 
 	{"", "sh ~/.config/scripts/wm/mpvstatus.sh 🎵 mpv", 0, 23},
 
-	{"🌡", "sensors | awk '/^CPUTIN:/{print $2}'",				5,		0},
+	{"🌡", "sensors | awk '/^CPUTIN:/{print $2}'",	5, 1},
 
 
-	{"", "sh ~/.config/scripts/wm/storage.sh",	30,		0},
+	{"", "sh ~/.config/scripts/wm/storage.sh",	30,	2},
 
 	
-	{"", "sh ~/.config/scripts/wm/mem.sh",	30,		0},
+	{"", "sh ~/.config/scripts/wm/mem.sh",	30,		3},
 
 	{"", "sh ~/.config/scripts/wm/vol.sh", 0, 10},
 
-	{"", "sh ~/.config/scripts/wm/dtime.sh",	30,		0},
+	{"", "sh ~/.config/scripts/wm/dtime.sh",	30,		4},
 	
 
 };
