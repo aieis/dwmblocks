@@ -1,13 +1,14 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{"", "torrents" , 0, 24},
+        {"", "echo '[[ '", 0, 0},
+	/* {"", "torrents" , 0, 24}, */
 
-	{"", "mpvstatus  web-media" , 0, 22},
+	/* {"", "mpvstatus  web-media" , 0, 22}, */
 
-	{"", "mpvstatus 🎵 mpv", 0, 23},
+	/* {"", "mpvstatus 🎵 mpv", 0, 23}, */
 
-	{"🌡", "sensors | awk '/^CPUTIN:/{print $2}'",	5, 1},
+	/* {"🌡", "sensors | awk '/^CPUTIN:/{print $2}'",	5, 1}, */
 
 
 	{"", "storage",	30,	2},
@@ -18,10 +19,11 @@ static const Block blocks[] = {
 	{"", "vol", 0, 10},
 
 	{"", "dtime",	30,		4},
+        {"", "echo ' ]]'", 0, 0}
 	
 
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
-static char* delim = "|";
-static size_t delimLen = 2;
+static char* delim = " | ";
+static size_t delimLen = 3;
